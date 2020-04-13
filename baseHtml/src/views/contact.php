@@ -4,29 +4,6 @@ include_once './elements/footer.php';
 
 head();
 ?>
-<body>
-
-<nav class="navbar navbar-expand-lg navbar-dark bg-dark">
-    <a class="navbar-brand" href="../../index.php">DamienLocation</a>
-    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-        <span class="navbar-toggler-icon"></span>
-    </button>
-    <div class="collapse navbar-collapse" id="navbarNav">
-        <ul class="navbar-nav">
-            <li class="nav-item">
-                <a class="nav-link" href="../../index.php">Home <span class="sr-only">(current)</span></a>
-            </li>
-            <li class="nav-item">
-                <a class="nav-link" href="location.php">Location</a>
-            </li>
-            <li class="nav-item active">
-                <a class="nav-link" href="contact.php">Contact</a>
-            </li>
-        </ul>
-    </div>
-</nav>
-
-<div class="container">
     <div class="row">
         <div class="col-xs-12 col-sm-12 col-md-6  col-lg-6  col-xl-6">
             <form class="mt-5">

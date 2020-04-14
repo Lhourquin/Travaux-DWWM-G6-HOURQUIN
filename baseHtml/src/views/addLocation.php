@@ -4,7 +4,29 @@ include_once './elements/footer.php';
 
 head();
 ?>
-<form>
+<?php
+            if(isset($_GET['empty'])){
+                if($_GET['empty'] == true){
+                    ?>
+                    <div class="alert alert-danger" role="alert">
+                        Ces champs ne peuvent pas être vides.
+                    </div>
+                    <?php
+                }
+            }
+        ?>
+        <?php
+        if(isset($_GET['existe'])){
+            if($_GET['existe'] == true){
+                ?>
+                <div class="alert alert-danger" role="alert">
+                    La marque et le modele existent déja.
+                </div>
+                <?php
+            }
+        }
+        ?>
+<form method="post" action="gererMesBien.php">
   <div class="form-row">
     <div class="form-group col-md-6">
       <label for="title">Title</label>
@@ -29,7 +51,7 @@ head();
   <label for="description">Description</label>
 
   </div>
-   <textarea name="description" id="" cols="100" rows="10"></textarea>
+   <textarea name="description" id="description" cols="100" rows="10"></textarea>
   </div>
   <div class="form-row">
     <div class="form-group col-md-6">

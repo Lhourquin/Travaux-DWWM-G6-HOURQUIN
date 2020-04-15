@@ -6,35 +6,35 @@ head();
 ?>
     <div class="row">
         <div class="col-xs-12 col-sm-12 col-md-6  col-lg-6  col-xl-6">
-            <form class="mt-5">
+            <form class="mt-5" action="insertionDataContact.php" method="POST">
                 <div class="row">
                     <div class="form-group col-md-12">
                         <label for="email">Email</label>
-                        <input type="email" class="form-control" id="email" placeholder="Email">
+                        <input type="email" class="form-control" name="email" id="email" placeholder="Email">
                     </div>
                 </div>
                 <div class="row">
                     <div class="form-group col-md-12">
                         <label for="adresse">Address</label>
-                        <input type="text" class="form-control" id="adresse" placeholder="1234 Main St">
+                        <input type="text" class="form-control" name="adresse" id="adresse" placeholder="1234 Main St">
                     </div>
                 </div>
                 <div class="row">
                     <div class="form-group col-md-12">
                         <label for="inputAddress2">Address 2</label>
-                        <input type="text" class="form-control" id="inputAddress2" placeholder="Apartment, studio, or floor">
+                        <input type="text" class="form-control" name="inputAddress2" id="inputAddress2" placeholder="Apartment, studio, or floor">
                     </div>
                 </div>
                 <div class="row">
                     <div class="form-group col-md-12">
                         <label for="inputCity">City</label>
-                        <input type="text" class="form-control" id="inputCity">
+                        <input type="text" class="form-control" name="inputCity" id="inputCity">
                     </div>
                 </div>
                 <div class="row">
                     <div class="form-group col-md-12">
                         <label for="inputState">State</label>
-                        <select id="inputState" class="form-control">
+                        <select id="inputState" name="inputState" class="form-control">
                             <option selected>Choose...</option>
                             <option>...</option>
                         </select>
@@ -43,7 +43,7 @@ head();
                 <div class="row">
                     <div class="form-group col-md-12">
                         <label for="inputZip">Zip</label>
-                        <input type="text" class="form-control" id="inputZip">
+                        <input type="text" name="inputZip" class="form-control" id="inputZip">
                     </div>
                 </div>
                 <button type="submit" class="btn btn-outline-secondary">Sign in</button>

@@ -4,33 +4,11 @@ include_once './elements/footer.php';
 
 head();
 ?>
-<?php
-            if(isset($_GET['empty'])){
-                if($_GET['empty'] == true){
-                    ?>
-                    <div class="alert alert-danger" role="alert">
-                        Ces champs ne peuvent pas être vides.
-                    </div>
-                    <?php
-                }
-            }
-        ?>
-        <?php
-        if(isset($_GET['existe'])){
-            if($_GET['existe'] == true){
-                ?>
-                <div class="alert alert-danger" role="alert">
-                    La marque et le modele existent déja.
-                </div>
-                <?php
-            }
-        }
-        ?>
-<form method="post" action="gererMesBien.php">
+<form method="post" action="insertionData.php">
   <div class="form-row">
     <div class="form-group col-md-6">
       <label for="title">Title</label>
-      <input type="text" class="form-control" id="title" placeholder="Title">
+      <input type="text" class="form-control" name="title" placeholder="Title">
     </div>
     
   </div>
@@ -67,7 +45,7 @@ head();
     </div>
     <div class="form-group col-md-2">
       <label for="price">Price</label>
-      <input type="number" class="form-control" id="price">
+      <input type="number" class="form-control" name="price">
     </div>
   </div>
   <div class="form-group">
